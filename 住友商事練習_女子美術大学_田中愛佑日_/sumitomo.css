@@ -1,0 +1,765 @@
+/*  基本設定  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Zen Kaku Gothic New,Noto Sans Japanese,Brawler";
+  background: #f8f8f8;
+}
+
+/*  上部ヘッダー  */
+.top-header {
+  background: #ffffff;
+  border-top: 4px solid #60B5B9;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.header-right {
+  display: flex;
+  gap: 20px;
+}
+
+.header-right a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+/*  ナビゲーション  */
+.navbar {
+  background: #ffffff;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 15px 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+}
+
+
+.container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;   
+}
+
+
+/*  Enriching lives and the world  */
+/* Dots for carousel */
+/* ドット */
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;  /* 下に余白を作ってテキストを下に */
+  gap: 1.5rem;
+}
+
+.dot, .dot-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 3rem;
+}
+
+.dot.active {
+  background-color: #60B5B9;
+  transform: scale(1.2);
+}
+
+/* ヒーロー */
+.hero-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;       
+  justify-content: flex-start;   
+  min-height: 100vh;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.hero-center h1 {
+  font-size: 3.8rem;
+  font-weight: bold;
+  font-family: Libre Baskerville;
+  line-height: 1.2;
+  margin-top: 5.5rem;             
+}
+
+/* Enriching の色だけ変更 */
+.hero-center .accent {
+  color: #60B5B9; 
+    font-family: Libre Baskerville;
+}
+
+/* ボタン */
+.hero-center .button {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 1rem 7rem;
+  background-color: white;
+  color: black;
+  border: 2px solid #60B5B9;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.hero-center .button:hover {
+  background-color: white;
+  color: black;
+  transform: translateY(-2px);
+}
+
+/* Owned Media Section */
+.owned-media {
+  text-align: left;
+  padding-left: 7rem;
+  margin-top: -18rem;
+}
+
+.owned-media .jp {
+  font-size: 1.8rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: black;
+  margin-bottom: -5rem;
+}
+
+.owned-media .en {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: 'Libre Baskerville', serif;
+  color: black;
+}
+
+.owned-media .en span {
+  color: #60B5B9;
+  font-family: Noto Sans JP;
+  font-size: 8.6rem;
+}
+.img-row-wrapper {
+  margin: 50px auto;
+  overflow: hidden; 
+}
+
+.img-row-container {
+  position: relative; 
+  overflow: hidden;  
+}
+
+.img-row {
+  display: flex;
+  gap: 40px;         
+  position: relative;
+}
+
+.img-item {
+  display: flex;
+  flex-direction: column;  
+  align-items: flex-start;
+  text-align: left;
+  width: 400px;           
+}
+
+.img-small {
+  width: 400px;
+  height: auto;      
+  flex-shrink: 0;     
+}
+
+.caption {
+  margin-top: 8px;
+  font-size: 15px;
+  font-family: Noto Sans JP;
+  color: black;
+  line-height: 1.4;
+  word-break: break-word;
+  letter-spacing: 0.5px;
+  padding-left: 8px;   
+  font-weight: 550;
+}
+
+/* 左右画像 */
+.first-img {
+  margin-left: -360px;  
+}
+
+.last-img {
+  margin-right: -390px; 
+}
+
+/* 丸いボタン */
+.round-button {
+  position: absolute;   
+  top: 50%;             
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #60B5B9;
+  background-color: #fff;
+  color: #60B5B9;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.left-button {
+  left: 0;
+}
+
+.right-button {
+  right: 0;
+}
+
+.round-button:hover {
+  background-color: #e6f0ff;
+}
+
+.sumitomosyouzi-nituite .jp {
+  font-weight: 455 ;        
+  text-align: left;        
+  padding-left: 120px;      
+  letter-spacing: 0.8px;   
+  font-size: 40px;        
+  font-family: Noto Sans JP;
+  color: black;           
+  line-height: 1.4;     
+  margin-top: 120px;
+}
+
+/* 3枚ギャラリ */
+.three-gallery {
+  margin: 80px auto;
+}
+
+.three-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;  
+}
+
+.three-item {
+  width: 377px;
+  text-align: left; 
+}
+
+.three-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.three-caption {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 570;
+  letter-spacing: 0.5px;
+  color: black;
+}
+
+/* キャプションとボタンを横並び */
+.three-caption-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;        
+  margin-top: 12px;
+}
+
+/* 丸いボタン */
+.three-round-button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #60B5B9; 
+  background-color: #fff;   
+  color: #60B5B9;          
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.three-round-button:hover {
+  background-color: #e6f0ff;
+}
+
+/* キャプション */
+.three-caption {
+  font-size: 18px;
+  font-weight: 600;  
+  letter-spacing: 0.5px;
+  color: black;
+  margin: 0;       
+}
+
+.three-gallery {
+  margin: 100px auto;
+}
+
+.shintyaku-jyouhou {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #f9f9f9;
+}
+
+/* ニュース左寄せ */
+.news-left {
+  display: flex;
+  gap: 30px;      
+  align-items: center;
+  justify-content: flex-start; 
+}
+
+.news-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;        
+}
+
+.news-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+}
+
+.news-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #60B5B9;
+  background-color: #fff;
+  color: #60B5B9;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.news-button:hover {
+  background-color: #e6f0ff;
+}
+
+/* RSS右端 */
+.rss-info {
+  display: flex;
+  justify-content: flex-end;
+   padding-right: 83px;
+}
+
+.rss-info p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 550;
+  color: black;
+}
+
+.news-new {
+  font-size: 40px;  
+  font-weight: 455;
+  text-align: left;       
+  padding-left: 85px;    
+  letter-spacing: 0.8px;  
+  font-family: Noto Sans JP;
+  color: black;
+}
+
+.topics-list {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;              
+  font-family: sans-serif;
+  margin: 20px 0;
+}
+
+.topic-row {
+  display: flex;
+  align-items: center;
+  gap: 38px;               
+  text-align: left;  
+  padding-left: 104px;     
+}
+.topic-row {
+  display: flex;
+  align-items: center;
+}
+
+.topic-title {
+  position: relative; 
+}
+.topic-title {
+  position: relative;       
+  padding-right: 100px;     
+}
+
+.pdf-area {
+  position: absolute;
+  right: 99px;                
+  margin-right: -663px;
+  font-size: 14px;
+  top: 50%;                  
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;  
+  gap: 6px;             
+}
+
+.pdf-icon {
+  width: 20px;
+  height: auto;
+}
+
+
+.right-box-2 {
+  margin-left: auto; 
+  margin-right: 83px;
+  border: none;  
+  width: 68px;
+  height: 26px;   
+  background-color: #D9D9D9;
+  color: black;
+
+}
+
+.topic-file {
+  color: #555;
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+
+.topic-disclosure {
+  border: 1px solid #333;
+  background-color: #f2f2f2;
+  padding: 3px 8px;
+  font-weight: bold;
+  border-radius: 4px;
+  font-size: 0.85em;
+  cursor: default;
+  white-space: nowrap;
+}
+
+.topic-row {
+  display: flex;          
+  align-items: center;
+  gap: 38px;               
+  text-align: left;  
+  padding-left: 125px; 
+}
+
+.topic-button {
+  background-color: #60B5B9; 
+  padding: 3px 29px;
+  font-weight: bold;
+  color: white;
+  border-radius: 3px; 
+  cursor: default;
+}
+
+.topic-date {
+  color: black;
+  font-size: 1em;
+  white-space: nowrap;
+}
+
+.topic-title {
+  font-size: 1em;
+  line-height: 1;
+}
+
+.important-news {
+  font-size: 1em;
+  line-height: 1;
+  text-align: left;  
+}
+
+.important-news .topic-date {
+  margin-right: -28px;
+}
+
+.important-news {
+  font-size: 1em;        
+  line-height: 1.5;     
+  text-align: left;
+  padding: 2px 0;     
+}
+
+.important-news .topic-row {
+  margin-bottom: 8px;   
+}
+
+.supesyaru-konntenntu .contents-title {
+  font-weight: 455;
+  text-align: left;
+  padding-left: 120px;
+  letter-spacing: 0.8px;
+  font-size: 40px;
+  font-family: "Noto Sans JP", sans-serif;
+  color: black;
+  line-height: 1;
+  margin-top: 120px;
+  margin-bottom: -80px; 
+}
+
+/*3枚中央揃え */
+.new-three-row {
+  display: flex;
+  justify-content: center; 
+  gap: 40px;           
+  flex-wrap: wrap;    
+}
+
+/* 左寄せ*/
+.left-align-row {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  padding-left: 120px;
+  margin-top: -110px;
+  flex-wrap: wrap;
+}
+
+.new-three-item {
+  width: 377px;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding-left: 0; 
+}
+
+.new-three-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.new-three-caption-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.new-three-caption-title {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: black;
+  white-space: normal; 
+}
+
+.new-three-caption-text {
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: black;
+  white-space: normal; 
+}
+
+.new-three-round-button {
+  border: none;
+  color: #60B5B9;
+  font-weight: bold;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+
+
+/*最後*/
+.site-footer {
+  background-color: #f8f8f8;  
+  padding: 20px 120px;       
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.footer-links {
+  list-style: none;          
+  padding: 0;
+  margin: 0;
+  display: flex;             
+  flex-wrap: wrap;           
+  gap: 30px;              
+  align-items: center;
+}
+
+.footer-links li {
+  display: flex;
+  align-items: center;
+  gap: 8px;                  
+}
+
+.footer-links li a {
+  text-decoration: none;     
+  color: black;
+  font-size: 12px;
+}
+
+.footer-links li a:hover {
+  color: gray;            
+}
+
+.footer-round-button {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;        
+  border: 1px solid #D9D9D9;
+  background-color: #D9D9D9;
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.footer-round-button:hover {
+  background-color: #60B5B9;
+  color: white;
+  border-color: #60B5B9;
+}
+
+
+.copyright {
+  text-align: center;
+  margin: 10px;
+  color: black;
+  font-size: 13px;
+  padding: 13px 120px;
+}
+
+.social-media-section {
+  background-color: #dfeae8;
+  min-height: 450px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 20px; 
+}
+
+social-media-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.social-media-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 370 ;
+  letter-spacing: 2.5px;
+  font-family: Noto Sans JP;
+  margin-bottom: 30px;
+}
+
+/* 上段リスト */
+.social-media-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: -50px;
+  margin-bottom: 30px;
+}
+
+.sns-btn {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+  padding: 15px 29px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #333;
+  background: #fff;
+  font-size: 16px;        
+  font-weight: 600;       
+  letter-spacing: 1px;  
+  line-height: 1.4;
+  margin-top: 50px;
+}
+
+.sns-icon {
+  width: 38px;
+  height: 38px;
+}
+
+/* 下段 Share */
+.social-share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  gap: 22px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+/* 丸アイコン */
+.share-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.share-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* 最後のアイコンだけ四角にする */
+.share-icons img:last-child {
+  border-radius: 8px;   
+}
